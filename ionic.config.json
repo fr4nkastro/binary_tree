@@ -1,0 +1,7 @@
+{
+  "name": "binary_tree",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
