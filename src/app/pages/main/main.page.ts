@@ -48,7 +48,10 @@ export class MainPage implements OnInit {
   let node2= new BTreeNode({value:this.setStep(
     "Realice el ajuste del voltaje de polarización del relevador (1.C1). Si no puede lograr el ajuste, realice lo siguiente: Seleccione polarización normal y haga una copia. Prepare el multímetro para medir +12 VCC. Conecte (-) a retorno de lógica común. Conecte (+) a P12, pins 5, 6 y 7, uno a la vez.",
     "¿Hay entre +11 y +13 VCC en todos los pins?")})
-  let node3= new BTreeNode({value:this.setStep("N3","0000")})
+  let node3= new BTreeNode({value:this.setStep(
+    "Desconecte el cable de polarización del revelador",
+    "¿Hay polarización del revelador?")})
+    
   let node4= new BTreeNode({value:this.setStep("N4","0000")})
   let node5= new BTreeNode({value:this.setStep("N5","0000")})
   let node6= new BTreeNode({value:this.setStep("N6","0000")})

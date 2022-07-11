@@ -4,19 +4,40 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card *ngIf="currentNode.value !=null">
-    <ion-card-header>
-      <ion-card-title></ion-card-title>
-      <ion-card-subtitle>{{currentNode.value.statement}}</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      <ion-item>
-        {{currentNode.value.question}}
-      </ion-item>
+<ion-content  >
+  <div class="ion-content-custom">
+    <div class="div-in-line">
+      <ion-card *ngIf="currentNode.value !=null">
+        <ion-item color="primary">
+          <ion-label>Polarización del Revelador</ion-label>
+          <ion-icon slot="start" name="bicycle-outline"></ion-icon>
+        </ion-item>
       
-      <ion-button (click)="onClickYes()">Si</ion-button> <ion-button (click)="onClickNo()">No</ion-button>
-    </ion-card-content>
-  </ion-card>
+        <ion-card-content class="center_all">
+         <ion-item>
+          {{currentNode.value.statement}}
+         </ion-item>
+          <ion-item id="colori">
+            {{currentNode.value.question}}
+          </ion-item>
+          <div id="div_buttons">
+            <ion-button class="buttons_yes_no" (click)="onClickYes()">Si</ion-button> <ion-button class="buttons_yes_no" (click)="onClickNo()">No</ion-button>  
+          </div>
+              </ion-card-content>
+      </ion-card>
+    </div>
+    
+    <div class="div-in-line">
+      <ion-card>
+        <ion-card-content style="position: center;">
+          <ion-img id="img-custom" src="../../../assets/img/printer.jpeg"></ion-img>
+        </ion-card-content>
+        
+      </ion-card>
+      
+    </div>
+  </div>
+  
+    
+
 </ion-content>
