@@ -3,35 +3,34 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    background-color:rgb(181, 203, 244);
     
 }
 
-
-
-
-.shadow_custom{
-    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-
-
 .div-in-line{
     display: inline-block; 
-border: 1px solid red; 
-margin:10px;
-
+    margin:10px;
+    border-color: black;
+    width: 90vh;
+    
 }
 
 .ion-content-custom{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 #img-custom{
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-    max-width: fit-content;
-    max-height: fit-content;
+  height: 85vh;
+  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.ion-item-custom{
+    --color:white;
+    --background: rgb(181, 203, 244);
 }
